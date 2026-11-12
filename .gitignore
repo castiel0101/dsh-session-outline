@@ -2,3 +2,6 @@ node_modules/
 .DS_Store
 docs/*.bak
 *.tgz
+
+# 本地发布笔记：不发布
+PUBLISHING.md
