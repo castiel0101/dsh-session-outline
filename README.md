@@ -66,7 +66,7 @@ Host 半边（`lib/index.js`）是空壳：client-modules 只扫描**已激活**
 
 需要 dsh `0.2.2-rc.1` 或更新的 `0.2.x`（见 `package.json` 的 `engines.dsh`）。
 
-### 从 npm（推荐）
+### 从 npm
 
 ```bash
 # 桌面版
@@ -75,6 +75,14 @@ dsh plugin --profile desktop add dsh-session-outline
 # 纯 Web 版（dsh web）
 dsh plugin --profile web add dsh-session-outline
 ```
+
+### 从 GitHub（无需 npm）
+
+```bash
+dsh plugin --profile desktop add github:castiel0101/dsh-session-outline
+```
+
+锁定到某个提交：`github:castiel0101/dsh-session-outline#<commit>`
 
 ### 从源码（本地开发）
 
