@@ -1,0 +1,13 @@
+# dsh-session-outline bundle patch: inserts this plugin's row into the profile's
+# plugin roster. The row name must equal the package name so the Host loader
+# resolves it through node_modules.
+#
+# Install with:
+#   dsh plugin --profile desktop add /Volumes/JackSsd/项目/自定义/dsh-session-outline
+#
+# The Host half contributes nothing but the lifecycle; the whole feature is the
+# browser half (`lib/client.js`), which the client module system serves to the
+# page because package.json declares `dsh.client` + `exports["./client"]`.
+- insert:
+    - id: session-outline
+      name: 'dsh-session-outline'

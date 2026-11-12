@@ -1,0 +1,53 @@
+{
+  "name": "dsh-session-outline",
+  "version": "0.1.0",
+  "description": "DSH plugin: a per-session outline (会话大纲) for the chat window — a header button opens a right-side drawer listing every turn of the session, with prompt/response previews, a filter box, and click-to-jump navigation that pages unloaded history in first.",
+  "type": "module",
+  "license": "MIT",
+  "author": "liujie_lc",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "outline",
+    "navigation",
+    "chat-ui"
+  ],
+  "homepage": "https://github.com/castiel0101/dsh-session-outline#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castiel0101/dsh-session-outline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/castiel0101/dsh-session-outline/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": "^22.19 || >=24",
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  }
+}
