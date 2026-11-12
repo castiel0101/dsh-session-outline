@@ -13,9 +13,9 @@ DSH 插件：给聊天窗口加一个 **本会话大纲**（Session outline）�
 
 ## 界面
 
-![打开状态](docs/preview-open.png)
+![打开状态](https://raw.githubusercontent.com/castiel0101/dsh-session-outline/main/docs/preview-open.png)
 
-![跳转后](docs/preview-jump.png)
+![跳转后](https://raw.githubusercontent.com/castiel0101/dsh-session-outline/main/docs/preview-jump.png)
 
 | 位置 | 内容 |
 |---|---|
